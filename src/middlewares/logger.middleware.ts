@@ -1,5 +1,5 @@
-import * as winston from 'winston';
-import * as expressWinston from 'express-winston';
+import * as winston from 'winston'
+import * as expressWinston from 'express-winston'
 
 export const loggerMiddleware = expressWinston.logger({
     transports: [
@@ -9,7 +9,7 @@ export const loggerMiddleware = expressWinston.logger({
         winston.format.colorize(),
         winston.format.json()
     )
-});
+})
 
 export const errorLoggerMiddleware = expressWinston.errorLogger({
     transports: [
@@ -19,4 +19,4 @@ export const errorLoggerMiddleware = expressWinston.errorLogger({
         winston.format.colorize(),
         winston.format.json()
     )
-});
+})

@@ -1,4 +1,4 @@
-import { checkSchema, Schema, ValidationChain } from 'express-validator';
+import { checkSchema, Schema, ValidationChain } from 'express-validator'
 
 const PostTestSchema: Schema = {
     email: {
